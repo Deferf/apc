@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n    let welcomes = [\n        \"Welcome to APC del Noroeste\", // English\n        \"Bienvenidos a APC del Noroeste\", // Spanish\n        \"欢迎来到 APC del Noroeste\", // Chinese\n        \"APC del Noroesteへようこそ\", // Japanese\n        \".... . .-.. .-.. --- / - --- / .- .--. -.-. / -.. . .-.. / -. --- .-. --- . ... - .\", // Morse\n        \"nuqneH APC del Noroeste\", // Klingon\n        \"Mae g'ovannen APC del Noroeste\", // Elvish\n        \"Bem-vindo à APC del Noroeste\", // Portuguese\n        \"Bienvenue à APC del Noroeste\" // French\n    ];\n    let currentIndex = 0;\n\n    setInterval(() => {\n        currentIndex = (currentIndex + 1) % welcomes.length;\n    }, 3000);\n</script>\n\n<style>\n    main {\n        text-align: center;\n        padding: 1em;\n        max-width: 240px;\n        margin: 0 auto;\n        font-size: 1em;\n    }\n</style>\n\n<main>\n    <h1>{welcomes[currentIndex]}</h1>\n</main>\n"
+  ],
+  "names": [],
+  "mappings": "AAoBI,kBAAK,CACD,UAAU,CAAE,MAAM,CAClB,OAAO,CAAE,GAAG,CACZ,SAAS,CAAE,KAAK,CAChB,MAAM,CAAE,CAAC,CAAC,IAAI,CACd,SAAS,CAAE,GACf"
+}
